@@ -1,0 +1,31 @@
+{
+  "name": "avia-tickets",
+  "version": "1.0.0",
+  "description": "Ticketing page demo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chern0us/avia-tickets.git"
+  },
+  "keywords": [
+    "ticket",
+    "react",
+    "page"
+  ],
+  "author": "chern0us",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chern0us/avia-tickets/issues"
+  },
+  "homepage": "https://github.com/chern0us/avia-tickets#readme",
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "devDependencies": {
+    "react-scripts": "^2.1.5"
+  }
+}
