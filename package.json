@@ -2,9 +2,11 @@
   "name": "avia-tickets",
   "version": "1.0.0",
   "description": "Ticketing page demo.",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
   },
   "repository": {
     "type": "git",
@@ -22,10 +24,18 @@
   },
   "homepage": "https://github.com/chern0us/avia-tickets#readme",
   "dependencies": {
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.11",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
   },
   "devDependencies": {
     "react-scripts": "^2.1.5"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
