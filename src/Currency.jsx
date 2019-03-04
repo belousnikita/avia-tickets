@@ -11,7 +11,7 @@ export default class Currency extends React.Component {
     render() {
         return <div>
             <div className="textblock">CURRENCY</div>
-            <div className="btn-group" role="group" aria-label="Currency">
+            <div className="d-flex justify-content-center btn-group" role="group" aria-label="Currency">
                 {map(this.props.currencies, c => {
                     const className = classNames('btn btn-secondary', { active: c.isSelected });
                     return <Button key={c.name} className={className} name={c.name}
