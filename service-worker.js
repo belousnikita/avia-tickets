@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/chern0us/avia-tickets/precache-manifest.8f24cf6e3d73936580a1b7e03fd2df28.js"
+  "/chern0us/avia-tickets/precache-manifest.7bfbd053afe8c1ee283a7a4724fedb0b.js"
 );
 
 workbox.clientsClaim();
