@@ -33,6 +33,7 @@
     "react-dom": "^16.8.3"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "react-scripts": "^2.1.5"
   },
   "browserslist": [

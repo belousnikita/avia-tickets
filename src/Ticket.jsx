@@ -1,17 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
-// "origin": "VVO",
-//     "origin_name": "Владивосток",
-//     "destination": "TLV",
-//     "destination_name": "Тель-Авив",
-//     "departure_date": "12.05.18",
-//     "departure_time": "16:20",
-//     "arrival_date": "12.05.18",
-//     "arrival_time": "22:10",
-//     "carrier": "TK",
-//     "stops": 3,
-//     "price": 12400
 
 const TimeBlock = props => (<div className="stamp" >
     <div className="time">{props.time}</div>
