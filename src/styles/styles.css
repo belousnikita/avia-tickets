@@ -1,0 +1,235 @@
+html, body {
+    margin: 0;
+    background-color: rgb(214, 226, 226);
+    width: 100%;
+    height: 100%;
+}
+.block {
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.116);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.116);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.116);
+    margin: 1vh;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.block.ticket {
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(156, 55, 55, 0.116);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(156, 55, 55, 0.116);
+    box-shadow: 0px 0px 50px 0px rgba(156, 55, 55, 0.116);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.block.ticket:hover {
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(117, 156, 55, 0.918);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(117, 156, 55, 0.918);
+    box-shadow: 0px 0px 50px 0px rgba(117, 156, 55, 0.918);
+   /* margin-left: 0; */
+    
+}
+
+.textblock {
+    margin-top: 2vh;
+    margin-bottom: 0.8vh;
+    user-select: none;
+}
+.variant {
+    user-select: none;
+    cursor: pointer;
+}
+.btn {
+    text-transform: uppercase;
+    /* background-color: rgb(108, 177, 255); */
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(117, 177, 246, 1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(117, 177, 246, 1);
+    box-shadow: 0px 0px 10px 0px rgba(117, 177, 246, 1);
+    color: rgb(117, 177, 246);
+    background-color: transparent;
+    border-color: rgb(117, 177, 246);
+    transition-delay: 0s, 0s, 0s, 0s;
+    transition-duration: 0.30s, 0.30s, 0.30s, 0.30s;
+    transition-property: color, background-color, border-color, box-shadow;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+}
+.btn:hover {
+    background-color: rgb(95, 144, 200);
+    border-color: rgb(117, 177, 246);
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: rgb(117, 177, 246);
+    border-color: rgb(117, 177, 246);
+}
+button:focus {
+    box-shadow: none !important;
+    outline: none !important; 
+  }
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////CHECKBOXES////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.control-group {
+    margin-bottom: 2.5vh;
+}
+.control {
+    /* font-family: arial; */
+    display: block;
+
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    padding-top: 0px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.only {
+    /* display: inline; */
+    float: right;
+    padding: 0;
+    opacity: 0;
+    font-size: 1em;
+    box-shadow: none;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.control:hover .only {
+    opacity: 1;
+    background-color: transparent;
+    color: rgb(95, 144, 200);
+}
+.control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        
+}
+.control_indicator {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border-radius:  3px;
+    background: transparent;
+    border: 2px rgb(117, 177, 246) solid;
+}
+.control-radio .control_indicator {
+    border-radius: none;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: transparent;
+}
+
+.control input:checked ~ .control_indicator {
+    background: transparent;
+    transition: all ease 0.3ms;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: transparent;
+}
+.control input:disabled ~ .control_indicator {
+    background: transparent;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 7px;
+    top: 2px;
+    width: 4px;
+    height: 10px;
+    border: solid rgb(117, 177, 246);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////CHECKBOXES////////////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.transfer {
+    padding: 3vh;
+}
+.stamp {
+    padding: 2vh;
+}
+.time {
+    font-size: 1.8rem;
+    text-align: left;
+    color: rgb(80, 80, 80);
+    user-select: none;
+}
+.date {
+    font-size: 0.8rem;
+    color: rgb(80, 80, 80);
+    user-select: none;
+}
+.destination {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+    user-select: none;
+}
+.line {
+    width: 15vh;
+    height: 1px;
+    display: block;
+    position: relative;
+    background-color: grey;
+    /* align-self: center; */
+    top: 0;
+    /* user-select: none; */
+    
+}
+.icon {
+    position: relative;
+    font-size: 0.8rem;
+    color: grey;
+    vertical-align: top;
+    top: 0;
+    user-select: none;
+
+}
+.line-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.text {
+    width: 100%;
+    text-align: center;
+    user-select: none;
+}
+.btn.buy {
+    width: 10vh;
+    margin: 1vh;
+    color: white;
+    background-color: orange;
+    -webkit-box-shadow: 0px 0px 10px 0px orange;
+    -moz-box-shadow: 0px 0px 10px 0px orange;
+    box-shadow: 0px 0px 10px 0px orange;
+    border-color: orange;
+}
+.btn.buy:hover {
+    background-color: rgb(180, 117, 0);
+    -webkit-box-shadow: 0px 0px 10px 0px rgb(180, 117, 0);
+    -moz-box-shadow: 0px 0px 10px 0px rgb(180, 117, 0);
+    box-shadow: 0px 0px 10px 0px rgb(180, 117, 0);
+    border-color: rgb(180, 117, 0);
+}
