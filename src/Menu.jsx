@@ -1,6 +1,7 @@
 import React from 'react';
 import Transfers from './Transfers';
 import Currency from './Currency';
+import PropTypes from 'prop-types';
 export default class Menu extends React.Component {
     render() {
         const { currencies, currencyChanger, transfers, transferSelector, onlyTransferHandler } = this.props;
@@ -12,4 +13,11 @@ export default class Menu extends React.Component {
             </div>
         </div>;
     }
+}
+Menu.propTypes = {
+    currencies: PropTypes.object,
+    currencyChanger: PropTypes.func,
+    transfers: PropTypes.object,
+    transferSelector: PropTypes.func,
+    onlyTransferHandler: PropTypes.func,
 }
