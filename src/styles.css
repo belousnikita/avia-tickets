@@ -12,6 +12,20 @@ html, body {
     border-radius: 10px;
     background-color: #fff;
 }
+.block.ticket {
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(156, 55, 55, 0.116);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(156, 55, 55, 0.116);
+    box-shadow: 0px 0px 50px 0px rgba(156, 55, 55, 0.116);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.block.ticket:hover {
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(117, 156, 55, 0.918);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(117, 156, 55, 0.918);
+    box-shadow: 0px 0px 50px 0px rgba(117, 156, 55, 0.918);
+   /* margin-left: 0; */
+    
+}
+
 .textblock {
     margin-top: 2vh;
     margin-bottom: 0.8vh;
@@ -150,5 +164,72 @@ button:focus {
 
 .transfer {
     padding: 3vh;
+}
+.stamp {
+    padding: 2vh;
+}
+.time {
+    font-size: 1.8rem;
+    text-align: left;
+    color: rgb(80, 80, 80);
+    user-select: none;
+}
+.date {
+    font-size: 0.8rem;
+    color: rgb(80, 80, 80);
+    user-select: none;
+}
+.destination {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+    user-select: none;
+}
+.line {
+    width: 15vh;
+    height: 1px;
+    display: block;
+    position: relative;
+    background-color: grey;
+    /* align-self: center; */
+    top: 0;
+    /* user-select: none; */
+    
+}
+.icon {
+    position: relative;
+    font-size: 0.8rem;
+    color: grey;
+    vertical-align: top;
+    top: 0;
+    user-select: none;
 
+}
+.line-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.text {
+    width: 100%;
+    text-align: center;
+    user-select: none;
+}
+.btn.buy {
+    width: 10vh;
+    margin: 1vh;
+    color: white;
+    background-color: orange;
+    -webkit-box-shadow: 0px 0px 10px 0px orange;
+    -moz-box-shadow: 0px 0px 10px 0px orange;
+    box-shadow: 0px 0px 10px 0px orange;
+    border-color: orange;
+}
+.btn.buy:hover {
+    background-color: rgb(180, 117, 0);
+    -webkit-box-shadow: 0px 0px 10px 0px rgb(180, 117, 0);
+    -moz-box-shadow: 0px 0px 10px 0px rgb(180, 117, 0);
+    box-shadow: 0px 0px 10px 0px rgb(180, 117, 0);
+    border-color: rgb(180, 117, 0);
 }
