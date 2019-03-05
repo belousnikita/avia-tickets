@@ -3,7 +3,7 @@ import Menu from './Menu';
 import Ticket from './Ticket';
 import forEach from 'lodash/forEach';
 import find from 'lodash/find';
-import './styles.css';
+import './styles/styles.css';
 import base from './tickets.json';
 import axios from 'axios';
 export default class App extends React.Component {
