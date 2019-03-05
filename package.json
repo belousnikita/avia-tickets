@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/chern0us/avia-tickets#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "classnames": "^2.2.6",
     "lodash": "^4.17.11",
     "react": "^16.8.3",
