@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/chern0us/avia-tickets/precache-manifest.5ab30185049159d34902158cc93a3b63.js"
+  "/avia-tickets/precache-manifest.e47c7699a824d3a74f2a085661e7a1ec.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/chern0us/avia-tickets/index.html", {
+workbox.routing.registerNavigationRoute("/avia-tickets/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
