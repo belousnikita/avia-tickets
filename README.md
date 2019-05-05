@@ -3,5 +3,5 @@ Ticketing page demo. App loads and renders tickets from .json file with prices i
 
 ### Open
 
-Open page [https://chern0us.github.io/avia-tickets](https://chern0us.github.io/avia-tickets).
+Open page [https://belousnikita.github.io/avia-tickets](https://belousnikita.github.io/avia-tickets).
 
